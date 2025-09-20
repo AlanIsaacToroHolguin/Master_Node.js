@@ -4,7 +4,7 @@ En el marco de este **master de Node.js** que estoy estudiando y desarrollando p
 
 Por eso, aquí registro los pasos iniciales que he realizado para instalar, configurar y organizar MongoDB en mi PC, de manera que quede todo claro y documentado.  
 
-Este documento es entonces una guía práctica de cómo he preparado el uso de esta tecnología, con el objetivo de posteriormente **integrarla con Node.js** y poder construir proyectos completos de backend y aplicaciones modernas.
+Este documento es entonces una guía práctica de cómo he preparado el uso de esta tecnología, con el objetivo de posteriormente **integrarla con Node.js** y poder construir proyectos completos de backend y aplicaciones modernas
 
 ---
 
