@@ -157,3 +157,42 @@ Para no tener que ejecutar `mongod` manualmente:
 ---
 
 📂 Archivo organizado por **Alan** para recordar la configuración y comandos de MongoDB en mi equipi
+
+
+
+
+// 1. Crear y seleccionar base de datos
+use videojuegos
+
+// 2. Crear colección (opcional)
+db.createCollection("ps4")
+
+// 3. Insertar documentos
+// Insertar uno
+db.ps4.insertOne({
+  Titulo: "Call Of Duty 1",
+  Genero: "Disparos",
+  Anio: 2000
+});
+
+// Insertar varios
+db.ps4.insertMany([
+  { Titulo: "God of War", Genero: "Acción", Anio: 2005 },
+  { Titulo: "Uncharted", Genero: "Aventura", Anio: 2007 }
+]);
+
+// 4. Verificar inserciones
+show databases
+show collections
+db.ps4.find().pretty()
+
+// 5. Practicar eliminaciones
+// Eliminar un documento
+db.ps4.deleteOne({ Anio: 2000 })
+
+// Eliminar múltiples documentos
+db.ps4.deleteMany({ Genero: "Disparos" })
+
+// 6. Limpiar (al finalizar práctica)
+db.ps4.drop()
+db.dropDatabase()
