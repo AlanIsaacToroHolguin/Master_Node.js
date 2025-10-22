@@ -25,7 +25,22 @@ app.use(cors());
 // Middleware: automatically parse incoming request bodies to JSON
 app.use(express.json());
 
-// Routes: Here you can define your routes (e.g., app.get, app.post, etc.)
+
+
+//ROUTES
+
+const router_article = require("./routes/article")
+
+//loading the routes
+
+app.use("/api/",router_article);
+
+
+
+
+
+
+// Routes HARDCODEADAS: Here you can define your routes (e.g., app.get, app.post, etc.)
 // Example 1: Returning plain HTML as a response
 /*app.get("/probando", (req, res) => {
     console.log("The endpoint was executed correctly");
@@ -52,7 +67,7 @@ app.get("/probando", (req, res) => {
 
 // Example 3: Returning JSON explicitly using res.json()
 // This is the most common way when building APIs
-app.get("/probando", (req, res) => {
+/*app.get("/probando", (req, res) => {
     console.log("The endpoint was executed correctly");
 
     return res.status(200).json([{
@@ -67,7 +82,7 @@ app.get("/probando", (req, res) => {
     },
 ]);
 });
-
+*/
 
 
 // Start the server and listen for HTTP requests
