@@ -52,7 +52,7 @@ app.get("/probando", (req, res) => {
 
 // Example 3: Returning JSON explicitly using res.json()
 // This is the most common way when building APIs
-app.get("/probando", (req, res) => {
+/*app.get("/probando", (req, res) => {
     console.log("The endpoint was executed correctly");
 
     return res.status(200).json([{
@@ -67,7 +67,7 @@ app.get("/probando", (req, res) => {
     },
 ]);
 });
-
+*/
 
 
 // Start the server and listen for HTTP requests
