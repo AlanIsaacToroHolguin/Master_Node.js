@@ -1,15 +1,13 @@
 //(Object Destructuring)
 //extract only the Router property from the object that Express exports.
-const {Router} = require("express");
+// (Object Destructuring)
+// Extract only the Router property from Express
+const { Router } = require("express");
 const router = Router();
 
-const articlecontroller = require("../controller/article");
+const articleController = require("../controller/article");
 
-
-
-//test routes
-router.get("/ruta-de-prueba",articlecontroller.prueba);
-
+// Test route
+router.get("/ruta-de-prueba", articleController.prueba);
 
 module.exports = router;
-
